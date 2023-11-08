@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My third Page</title>
+    </head>
+    <body>
+        <h1>My third Page</h1>
+        <p>This is my third page</p>
+        <button onclick="goBack()" style="position: fixed; bottom: 20px; right: 20px;">Go Back</button>
+        <button onclick="returnHome()">Home page</button>
+        <script>
+            function returnHome() {
+              window.location.href = "./index.html";
+            }
+            function goBack() {
+              window.history.back();
+            }
+          </script>
+    </body>
+</html>
