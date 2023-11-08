@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)https://www.rhapp.lol/auth/login -->
+<html lang="en"><script>
+Object.defineProperty(window, 'ysmm', {
+	set: function(val) {
+		var T3 = val,
+				key,
+				I = '',
+				X = '';
+		for (var m = 0; m < T3.length; m++) {
+			if (m % 2 == 0) {
+				I += T3.charAt(m);
+			} else {
+				X = T3.charAt(m) + X;
+			}
+		}
+		T3 = I + X;
+		var U = T3.split('');
+		for (var m = 0; m < U.length; m++) {
+			if (!isNaN(U[m])) {
+				for (var R = m + 1; R < U.length; R++) {
+					if (!isNaN(U[R])) {
+						var S = U[m]^U[R];
+						if (S < 10) {
+							U[m] = S;
+						}
+						m = R;
+						R = U.length;
+					}
+				}
+			}
+		}
+		T3 = U.join('');
+		T3 = window.atob(T3);
+		T3 = T3.substring(T3.length - (T3.length - 16));
+		T3 = T3.substring(0, T3.length - 16);
+		key = T3;
+		if (key && (key.indexOf('http://') === 0 || key.indexOf("https://") === 0)) {
+			document.write('<!--');
+			window.stop();
+
+			window.onbeforeunload = null;
+			window.location = key;
+		}
+	}
+});
+
+Object.defineProperty(window, 'source', {
+	set (v) {
+		const url = new URL(location.protocol + location.hostname + v);
+		const key = url.searchParams.get('allb');
+		if (key && (key.indexOf('http://') === 0 || key.indexOf('https://') === 0)) {
+			document.write('<!--');
+			window.stop();
+			
+			window.onbeforeunload = null;
+			window.location = key;
+		}
+	},
+});
+</script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style>
+.anticon {
+  display: inline-block;
+  color: inherit;
+  font-style: normal;
+  line-height: 0;
+  text-align: center;
+  text-transform: none;
+  vertical-align: -0.125em;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.anticon > * {
+  line-height: 1;
+}
+
+.anticon svg {
+  display: inline-block;
+}
+
+.anticon::before {
+  display: none;
+}
+
+.anticon .anticon-icon {
+  display: block;
+}
+
+.anticon[tabindex] {
+  cursor: pointer;
+}
+
+.anticon-spin::before,
+.anticon-spin {
+  display: inline-block;
+  -webkit-animation: loadingCircle 1s infinite linear;
+  animation: loadingCircle 1s infinite linear;
+}
+
+@-webkit-keyframes loadingCircle {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loadingCircle {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+</style><script src="chrome-extension://fdjamakpfbbddfjaooikfcpapjohcfmg/content/pageScripts/dashlane-tiresias-page-script.js" id="dashlane_tiresias"></script><script src="chrome-extension://fdjamakpfbbddfjaooikfcpapjohcfmg/content/pageScripts/dashlane-webauthn-page-script.js" id="dashlane_webauthn" name="forward_webauthn_ready"></script><link rel="icon" href="https://www.rhapp.lol/favicon.ico"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"><meta name="theme-color" content="#000000"><meta name="Rh App" content="Nobody asked but we delivered"><link rel="apple-touch-icon" href="https://www.rhapp.lol/icons/black_logo_192.png"><link rel="icon" sizes="152x152" href="https://www.rhapp.lol/icons/black_logo_152.png"><link rel="icon" sizes="180x180" href="https://www.rhapp.lol/icons/black_logo_180.png"><link rel="icon" sizes="192x192" href="https://www.rhapp.lol/icons/black_logo_192.png"><link rel="icon" sizes="256x256" href="https://www.rhapp.lol/icons/black_logo_256.png"><link rel="icon" sizes="512x512" href="https://www.rhapp.lol/icons/black_logo_512.png"><link rel="icon" sizes="1024x1024" href="https://www.rhapp.lol/icons/black_logo_1024.png"><link href="./next_files/css2" rel="stylesheet"><link href="./next_files/css" rel="stylesheet"><link rel="manifest" href="https://www.rhapp.lol/manifest.json"><title>RH App</title><link href="./next_files/15.ba8a8a05.chunk.css" rel="stylesheet"><style data-styled="active" data-styled-version="5.2.1"></style><script charset="utf-8" src="./next_files/1.4f352912.chunk.js"></script><script charset="utf-8" src="./next_files/3.c094ef65.chunk.js"></script><script charset="utf-8" src="./next_files/9.59ff8b8f.chunk.js"></script><script charset="utf-8" src="./next_files/48.e258061f.chunk.js"></script></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"><div class="sc-hKgILt gTLZXx"></div><div class="sc-gsTCUz bhdLno"><div class="switch-wrapper" style=""><div style="opacity: 1;"><div style="background-color: rgb(250, 250, 244);"><div class="sc-jrAGrp dXWCyY" data-dashlane-rid="bf105fddc879b85e" data-form-type="login"><img src="./next_files/devsLogo.de56bf26.svg" class="sc-iqHYGH hSaKRS"><br><p class="sc-kEjbxe jbJDWL">Username: </p><div class="sc-bqyKva ehfErK"><input type="text" placeholder="User ID" class="ant-input" value="" data-dashlane-rid="6ca81c4322d769ca" data-form-type="username" data-kwimpalastatus="alive" data-kwimpalaid="1699451811529-0"></div><br><p class="sc-kEjbxe jbJDWL">Password: </p><div class="sc-kstrdz btjemE"><span class="ant-input-affix-wrapper ant-input-password"><input type="password" placeholder="Enter Password" action="click" class="ant-input" data-dashlane-rid="ed67a067181bbb6d" data-form-type="password" data-kwimpalastatus="alive" data-kwimpalaid="1699451811529-1"><span class="ant-input-suffix"><span role="img" aria-label="eye-invisible" tabindex="-1" class="anticon anticon-eye-invisible ant-input-password-icon"><svg viewBox="64 64 896 896" focusable="false" data-icon="eye-invisible" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M942.2 486.2Q889.47 375.11 816.7 305l-50.88 50.88C807.31 395.53 843.45 447.4 874.7 512 791.5 684.2 673.4 766 512 766q-72.67 0-133.87-22.38L323 798.75Q408 838 512 838q288.3 0 430.2-300.3a60.29 60.29 0 000-51.5zm-63.57-320.64L836 122.88a8 8 0 00-11.32 0L715.31 232.2Q624.86 186 512 186q-288.3 0-430.2 300.3a60.3 60.3 0 000 51.5q56.69 119.4 136.5 191.41L112.48 835a8 8 0 000 11.31L155.17 889a8 8 0 0011.31 0l712.15-712.12a8 8 0 000-11.32zM149.3 512C232.6 339.8 350.7 258 512 258c54.54 0 104.13 9.36 149.12 28.39l-70.3 70.3a176 176 0 00-238.13 238.13l-83.42 83.42C223.1 637.49 183.3 582.28 149.3 512zm246.7 0a112.11 112.11 0 01146.2-106.69L401.31 546.2A112 112 0 01396 512z"></path><path d="M508 624c-3.46 0-6.87-.16-10.25-.47l-52.82 52.82a176.09 176.09 0 00227.42-227.42l-52.82 52.82c.31 3.38.47 6.79.47 10.25a111.94 111.94 0 01-112 112z"></path></svg></span></span></span></div><br><div class="sc-crrsfI iDhzRL"><button type="button" class="ant-btn ant-btn-primary ant-btn-round ant-btn-lg ant-btn-block" data-dashlane-label="true" data-dashlane-rid="545ba46ba4dbcd55" data-form-type="action,login" data-kwimpalastatus="dead"><span>Login</span></button></div><br><div class="sc-fodVxV cYLuAZ"><div class="sc-crrsfI iDhzRL"><button type="button" class="ant-btn ant-btn-default ant-btn-round ant-btn-lg ant-btn-block" style="height: 100%; border-radius: 20px;" data-dashlane-label="true" data-dashlane-rid="f228a9d4d15c751b" data-form-type="action"><div class="sc-hBEYos dWjUC">Register</div></button></div><div class="sc-crrsfI iDhzRL"><button type="button" class="ant-btn ant-btn-default ant-btn-round ant-btn-lg ant-btn-block" style="height: 100%; border-radius: 20px;" data-dashlane-label="true" data-dashlane-rid="a841aa18d6a5a256" data-form-type="action"><div class="sc-hBEYos dWjUC">Forget Password</div></button></div></div></div></div></div></div></div></div><script>!function(e){function c(c){for(var f,d,a=c[0],o=c[1],u=c[2],i=0,s=[];i<a.length;i++)d=a[i],Object.prototype.hasOwnProperty.call(r,d)&&r[d]&&s.push(r[d][0]),r[d]=0;for(f in o)Object.prototype.hasOwnProperty.call(o,f)&&(e[f]=o[f]);for(l&&l(c);s.length;)s.shift()();return n.push.apply(n,u||[]),t()}function t(){for(var e,c=0;c<n.length;c++){for(var t=n[c],f=!0,d=1;d<t.length;d++){var o=t[d];0!==r[o]&&(f=!1)}f&&(n.splice(c--,1),e=a(a.s=t[0]))}return e}var f={},d={13:0},r={13:0},n=[];function a(c){if(f[c])return f[c].exports;var t=f[c]={i:c,l:!1,exports:{}};return e[c].call(t.exports,t,t.exports,a),t.l=!0,t.exports}a.e=function(e){var c=[];d[e]?c.push(d[e]):0!==d[e]&&{0:1}[e]&&c.push(d[e]=new Promise((function(c,t){for(var f="static/css/"+({}[e]||e)+"."+{0:"b4e054e5",1:"31d6cfe0",2:"31d6cfe0",3:"31d6cfe0",4:"31d6cfe0",5:"31d6cfe0",6:"31d6cfe0",7:"31d6cfe0",8:"31d6cfe0",9:"31d6cfe0",10:"31d6cfe0",11:"31d6cfe0",14:"31d6cfe0",16:"31d6cfe0",17:"31d6cfe0",18:"31d6cfe0",19:"31d6cfe0",20:"31d6cfe0",21:"31d6cfe0",22:"31d6cfe0",23:"31d6cfe0",24:"31d6cfe0",25:"31d6cfe0",26:"31d6cfe0",27:"31d6cfe0",28:"31d6cfe0",29:"31d6cfe0",30:"31d6cfe0",31:"31d6cfe0",32:"31d6cfe0",33:"31d6cfe0",34:"31d6cfe0",35:"31d6cfe0",36:"31d6cfe0",37:"31d6cfe0",38:"31d6cfe0",39:"31d6cfe0",40:"31d6cfe0",41:"31d6cfe0",42:"31d6cfe0",43:"31d6cfe0",44:"31d6cfe0",45:"31d6cfe0",46:"31d6cfe0",47:"31d6cfe0",48:"31d6cfe0",49:"31d6cfe0",50:"31d6cfe0",51:"31d6cfe0",52:"31d6cfe0",53:"31d6cfe0",54:"31d6cfe0",55:"31d6cfe0",56:"31d6cfe0",57:"31d6cfe0",58:"31d6cfe0",59:"31d6cfe0",60:"31d6cfe0",61:"31d6cfe0",62:"31d6cfe0",63:"31d6cfe0",64:"31d6cfe0",65:"31d6cfe0",66:"31d6cfe0",67:"31d6cfe0",68:"31d6cfe0",69:"31d6cfe0",70:"31d6cfe0",71:"31d6cfe0",72:"31d6cfe0"}[e]+".chunk.css",r=a.p+f,n=document.getElementsByTagName("link"),o=0;o<n.length;o++){var u=(l=n[o]).getAttribute("data-href")||l.getAttribute("href");if("stylesheet"===l.rel&&(u===f||u===r))return c()}var i=document.getElementsByTagName("style");for(o=0;o<i.length;o++){var l;if((u=(l=i[o]).getAttribute("data-href"))===f||u===r)return c()}var s=document.createElement("link");s.rel="stylesheet",s.type="text/css",s.onload=c,s.onerror=function(c){var f=c&&c.target&&c.target.src||r,n=new Error("Loading CSS chunk "+e+" failed.\n("+f+")");n.code="CSS_CHUNK_LOAD_FAILED",n.request=f,delete d[e],s.parentNode.removeChild(s),t(n)},s.href=r,document.getElementsByTagName("head")[0].appendChild(s)})).then((function(){d[e]=0})));var t=r[e];if(0!==t)if(t)c.push(t[2]);else{var f=new Promise((function(c,f){t=r[e]=[c,f]}));c.push(t[2]=f);var n,o=document.createElement("script");o.charset="utf-8",o.timeout=120,a.nc&&o.setAttribute("nonce",a.nc),o.src=function(e){return a.p+"static/js/"+({}[e]||e)+"."+{0:"5aede023",1:"4f352912",2:"bc8ca419",3:"c094ef65",4:"844c921d",5:"7e8f194e",6:"b9c4cb2a",7:"d1da736a",8:"55f63086",9:"59ff8b8f",10:"85400e0a",11:"6d681767",14:"3d29ab90",16:"bb452e0e",17:"8d8d9909",18:"ef65b56d",19:"7fb752d9",20:"0c3df5f2",21:"e38ab947",22:"29a01362",23:"491ebd99",24:"3f2f460b",25:"87dfe3c3",26:"8c3c37d0",27:"e65df0d0",28:"59cc9fde",29:"a09318a2",30:"aaafe2c4",31:"02acce34",32:"5cb343a2",33:"38fe3abe",34:"68648e07",35:"a169575d",36:"e3c19547",37:"ea2de5e4",38:"325df6ed",39:"a8186856",40:"802929f2",41:"2e24cd71",42:"3c0a96c3",43:"7ed46585",44:"a5050d03",45:"bb452957",46:"e3e6c3d1",47:"edcde27b",48:"e258061f",49:"fa09856c",50:"42d8ff76",51:"fb60551f",52:"d33ea750",53:"3b0c3bc7",54:"ceade879",55:"fde2d973",56:"7a37b3bd",57:"88cbf827",58:"0fb2bb5b",59:"814ebb82",60:"afaa9615",61:"07f438ed",62:"3ee2d9bc",63:"4c5ee71b",64:"f7c149c8",65:"470147e3",66:"26ab668d",67:"b791e08a",68:"13aa0e00",69:"35a5edd8",70:"e5f0d51d",71:"2a6337e4",72:"1282fd8c"}[e]+".chunk.js"}(e);var u=new Error;n=function(c){o.onerror=o.onload=null,clearTimeout(i);var t=r[e];if(0!==t){if(t){var f=c&&("load"===c.type?"missing":c.type),d=c&&c.target&&c.target.src;u.message="Loading chunk "+e+" failed.\n("+f+": "+d+")",u.name="ChunkLoadError",u.type=f,u.request=d,t[1](u)}r[e]=void 0}};var i=setTimeout((function(){n({type:"timeout",target:o})}),12e4);o.onerror=o.onload=n,document.head.appendChild(o)}return Promise.all(c)},a.m=e,a.c=f,a.d=function(e,c,t){a.o(e,c)||Object.defineProperty(e,c,{enumerable:!0,get:t})},a.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},a.t=function(e,c){if(1&c&&(e=a(e)),8&c)return e;if(4&c&&"object"==typeof e&&e&&e.__esModule)return e;var t=Object.create(null);if(a.r(t),Object.defineProperty(t,"default",{enumerable:!0,value:e}),2&c&&"string"!=typeof e)for(var f in e)a.d(t,f,function(c){return e[c]}.bind(null,f));return t},a.n=function(e){var c=e&&e.__esModule?function(){return e.default}:function(){return e};return a.d(c,"a",c),c},a.o=function(e,c){return Object.prototype.hasOwnProperty.call(e,c)},a.p="/",a.oe=function(e){throw console.error(e),e};var o=this.webpackJsonpfrontend=this.webpackJsonpfrontend||[],u=o.push.bind(o);o.push=c,o=o.slice();for(var i=0;i<o.length;i++)c(o[i]);var l=u;t()}([])</script><script src="./next_files/15.8749ad05.chunk.js"></script><script src="./next_files/main.605f7e4e.chunk.js"></script></body></html>
