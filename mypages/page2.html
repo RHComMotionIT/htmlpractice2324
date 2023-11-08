@@ -1,0 +1,23 @@
+<!-- FILEPATH: /Users/vincent/Library/Mobile Documents/com~apple~CloudDocs/Y3/y3s1/hall/commotion/page2.html -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Random Image</title>
+  </head>
+  <body>
+    <h1>Random Image</h1>
+    <img src="https://source.unsplash.com/random" alt="Random Image">
+    <button onclick="returnHome()">Home page</button>
+    <button onclick="goBack()" style="position: fixed; bottom: 20px; right: 20px;">Go Back</button>
+    <script>
+      function returnHome() {
+        window.location.href = "./index.html";
+      }
+      function goBack() {
+        window.history.back();
+      }
+    </script>
+
+  </body>
+</html>
